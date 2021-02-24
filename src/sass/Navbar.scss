@@ -1,0 +1,164 @@
+$bgColor: #10504F; 
+$textColor: #FFFFFF;
+
+.nav{
+    background-color: $bgColor;
+    position: relative;
+    width: 100%;
+    height: 138px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+    .site-logo{
+     position: absolute;
+     width: 93px;
+     height: 77px;
+     left:48px;
+    }
+
+    .navmenu {
+        list-style: none; 
+        display: inline-flex;
+        justify-content: center;
+         width: 100%;
+       
+    }
+
+    .navmenu li {
+        padding: 10px 30px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        box-sizing: inherit;
+        
+    }
+
+    .navIcon{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        right:48px;
+    }
+
+    .icon{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .dropdownContent:hover{
+        max-height: 400px;
+    }
+
+    .navmenu li:hover ~ .dropdownContent{
+        max-height: 400px;
+    }
+
+    .navmenu li:hover{
+        text-underline-position: under;
+        text-decoration: underline;
+    }
+
+    #searchInput{
+        width: 278px;
+        height: 37px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding-left: 1em;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+
+    #searchInput:focus{
+       outline-color: transparent;
+    }
+
+    #searchInput::placeholder {
+        padding-left: 0.5em;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+
+    #searchBtn{
+        width: 56px;
+        height: 36px;
+        background: #000000;
+        border: none;
+        color: #FFFFFF;
+    }
+
+    .menuPic{
+        background-color: #EFEFEF;
+        display: flex !important;
+        height: 35%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        bottom: 5%;
+    }
+
+    .BurgerTitle{
+        font-weight: 300;
+    }
+    span{float:right;}
+
+    #searchForm{
+        overflow: hidden;
+        max-width: 100;
+    }
+    #mobileSearch{
+        background-color: white;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        z-index: 100;
+        overflow: hidden;
+        max-width: 0;
+    }
+    
+
+
+}
+
+
+
+
+$breakpoint-tablet: 768px;
+@media (max-width: 1100px) {
+    .navmenu li{
+        display:none !important;
+    }
+
+    .nav .navIcon {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .nav .site-logo {
+        position: absolute;
+        width: 93px;
+        height: 77px;
+        left: 120px;
+    }
+    #searchForm{
+        overflow: hidden;
+        max-width: 0;
+    }
+    #mobileSearch{
+        max-width: 100em !important;
+        padding: 0.5em !important;
+    }
+
+}
+
+
+
+
+

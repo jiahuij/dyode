@@ -1,0 +1,26 @@
+.arrowBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.arrowBtn:focus {
+  outline: transparent;
+}
+
+.cursiveHeader {
+  color: #000000;
+  font-family: Pacifico;
+  font-size: 60px;
+  line-height: 105px;
+  text-transform: none;
+  margin: 1em;
+}
+
+@media (max-width: 768px) {
+  .cursiveHeader {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+/*# sourceMappingURL=FeaturedProduct.css.map */

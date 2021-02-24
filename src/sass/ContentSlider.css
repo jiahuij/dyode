@@ -1,0 +1,25 @@
+.dot {
+  width: 20px !important;
+  height: 20px !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.carousel.carousel-slider {
+  height: 80%;
+}
+
+.dot:focus {
+  outline: transparent;
+}
+
+@media (max-width: 768px) {
+  .carousel.carousel-slider {
+    height: 40%;
+  }
+  .dot {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+/*# sourceMappingURL=ContentSlider.css.map */

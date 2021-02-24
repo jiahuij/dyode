@@ -1,0 +1,121 @@
+.subBannerWrape{
+    height: 332px;
+    background-color: #10504F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: none;
+
+    .subTitle{
+        font-family: Pacifico;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 70px;
+        color: #FFFFFF;
+       
+    }
+
+    .subDesc{
+
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+
+    .subFormWrape{
+
+        display: flex;
+        justify-content: center;
+
+
+        #subForm{ 
+            display: flex;
+            align-items: center;
+        }
+
+        #subEmailInput{
+            margin-left: 2em;
+            margin-right: 1em;
+            border-width: 0px;
+            width: 25vw;
+            height: 3vw;
+            font-size: 22px;
+            line-height: 26px;
+            font-weight: 400;
+
+        }
+
+        #subEmailInput::placeholder {
+            text-align: center;
+            font-size: 1.5vw;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        #subEmailInput:focus{
+            outline-color: transparent;
+        }
+
+        #subBtn{
+            width: fit-content;
+            height: 3vw;
+            letter-spacing: 0.1em;
+            background-color: transparent;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            border: 2px solid #FFFFFF;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+
+
+
+    
+    
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1440px) {
+    #subForm{
+        flex-direction: column;
+        margin: auto;
+    }
+    #subEmailInput {
+        margin-bottom: 1em;
+    }
+}
+
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+.subTitle{
+    font-size: 20px !important;
+    line-height: 35px ;
+    margin: 0px;
+}
+
+.subDesc{
+    font-size: 14px !important;
+    line-height: 17px;
+}
+
+.subFormWrape{
+    flex-direction: column;
+}
+
+#subEmailInput{
+    display: none;
+}
+
+#subBtn{
+    margin-top: 2em;
+    height: 6vw !important;
+   
+}
+
+}

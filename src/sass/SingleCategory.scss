@@ -1,0 +1,36 @@
+.category{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 50px 30px;
+    width: 30vw;
+    height: 40vw;
+    text-transform: none;
+    background-size: cover;
+}
+
+.categoryTitle{
+    font-size: 40px;
+    font-family: Pacifico;
+    background-color: #10504F;
+    line-height: 100px;
+    height: 114px;
+    width: 100%;
+    margin: 0;
+}
+
+$breakpoint-tablet: 768px;
+  
+@media (max-width: $breakpoint-tablet) {
+.category{
+    width: 40vw;
+    height: 50vw;
+    margin: 30px 15px;
+    }
+
+.categoryTitle{
+    font-size: 30px;
+    line-height: 60px;
+    height: 70px;
+    width: 100%;
+}
+}

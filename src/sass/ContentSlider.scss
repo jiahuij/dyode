@@ -1,0 +1,28 @@
+ .dot{
+    width:20px !important;
+    height:20px !important;
+    box-shadow:none !important;
+}
+
+.carousel.carousel-slider{
+height: 80%;
+}
+
+.dot:focus{
+    outline: transparent;
+}
+
+
+
+$breakpoint-tablet: 768px;
+  
+@media (max-width: $breakpoint-tablet) {
+.carousel.carousel-slider{
+    height: 40%;
+    }
+
+    .dot{
+        width:10px !important;
+        height:10px !important;
+    }
+}

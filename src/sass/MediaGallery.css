@@ -1,0 +1,29 @@
+.galleryWrape {
+  margin-top: 2em;
+  margin-bottom: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.socialPic {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+@media (max-width: 768px) {
+  .socialPic {
+    width: 28vw;
+  }
+  #a3 {
+    display: none;
+  }
+  #a4 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=MediaGallery.css.map */

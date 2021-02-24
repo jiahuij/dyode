@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAA;EACT,UAAU,EAAC,GAAG;EACd,gBAAgB,EAAC,OAAQ;EACzB,KAAK,EAAE,IAAI;CACd;;AACD,AAAA,aAAa,CAAC,MAAM,CAAA;EAEhB,IAAI,EAAE,GAAG;EACT,MAAM,EAAE,GAAG;CACd;;AAED,AAAA,aAAa,CAAC,MAAM,CAAC,QAAQ,CAAA;EACzB,gBAAgB,EAAE,OAAO;CAC5B",
+    "sources": [
+        "FavoriteBanner.scss"
+    ],
+    "names": [],
+    "file": "FavoriteBanner.css"
+}

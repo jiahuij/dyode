@@ -1,0 +1,44 @@
+.productWrape {
+  color: #000000;
+}
+
+.productWrape .productTitle {
+  margin-bottom: 0px;
+  text-transform: none;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.productWrape .productDesc {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+.productWrape .productPrice {
+  margin: auto;
+  font-family: 'Pacifico';
+  font-size: 26px;
+  line-height: 46px;
+  color: #10504F;
+}
+
+@media (max-width: 768px) {
+  .productTitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .productDesc {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+  }
+  .productPrice {
+    margin: auto;
+    font-family: 'Pacifico';
+    font-size: 18px;
+    line-height: 32px;
+    color: #10504F;
+  }
+}
+/*# sourceMappingURL=Product.css.map */

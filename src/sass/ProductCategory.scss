@@ -1,0 +1,23 @@
+.categoryWrape{
+    display: flex;
+    justify-content: center;
+
+}
+
+.group{
+    display: flex;
+    justify-content: center;
+}
+
+
+$breakpoint-tablet: 768px;
+  
+@media (max-width: $breakpoint-tablet) {
+.categoryWrape{
+    display: block;
+    }
+.long{
+    width: 85%;
+    margin: auto;
+}
+}

@@ -1,0 +1,33 @@
+.arrowBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrowBtn:focus{
+    outline: transparent;
+}
+
+.cursiveHeader{
+    color:#000000 ;
+    font-family: Pacifico;
+    font-size: 60px;
+    line-height: 105px;
+    text-transform: none;
+    margin: 1em;
+
+}
+
+
+
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+  
+@media (max-width: $breakpoint-tablet) {
+    .cursiveHeader{
+        font-size: 30px;
+        line-height: 50px;
+    
+    }
+}

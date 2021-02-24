@@ -1,0 +1,96 @@
+.Footer{
+    padding: 6em;
+    height: fit-content;
+    background-color: #000000;
+    display: flex;
+    text-align: start;
+    text-transform: none;
+   
+
+
+    ul{
+        padding-inline-start: 0px;
+    }
+
+    .footerTitle{
+        font-family: Pacifico;
+        font-size: 22px;
+        line-height: 39px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+
+    .footerMenuItem{
+        list-style: none;
+        font-size: 18px;
+        line-height: 50px;
+        font-weight: 400;
+    }
+
+    .services{
+        margin-right: 6em;
+    }
+
+    .social{
+        margin-left: auto;
+    }
+
+    .social li{
+        display:inline;
+    }
+
+    #insIcon{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .panel-collapse {
+        max-height: 500px;
+        overflow: hidden;
+        transition: max-height .5s ease;
+      }
+    .panel-close {
+        max-height: 500px;
+        overflow: hidden;
+        transition: max-height .5s ease;
+    }
+      span{
+        display: none;  
+        float:right
+    }
+}
+
+
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    .Footer{
+        flex-direction: column;
+    }
+
+    .footerTitle{
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    .Footer .services {
+        margin-right: 0;
+    }
+
+    .Footer .social {
+        margin-right: auto;
+        margin-left: 0;
+
+    }
+    .panel-close {
+        max-height: 0!important;
+    }
+    span{
+        display: inline !important;  
+        float:right
+    }
+}
+
+
+

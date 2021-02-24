@@ -1,0 +1,28 @@
+.categoryWrape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .categoryWrape {
+    display: block;
+  }
+  .long {
+    width: 85%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=ProductCategory.css.map */

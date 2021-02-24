@@ -1,12 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+
+import TopBanner from './Components/TopBanner'
+import Navbar from './Components/Navbar'
+import ContentSlider from './Components/ContentSlider'
+import Categories from './Components/ProductCategory'
+import FeaturedProduct from './Components/FeaturedProduct'
+import FavoriteBanner from './Components/FavoriteBanner'
+import MediaGallery from './Components/MediaGallery'
+import SubscriptionBanner from './Components/SubscriptionBanner'
+import Footer from './Components/Footer'
+
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TopBanner />
+    <Navbar />
+    <ContentSlider />
+    <Categories />
+    <FeaturedProduct />
+    <FavoriteBanner />
+    <MediaGallery />
+    <SubscriptionBanner />
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 );

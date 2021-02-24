@@ -1,0 +1,144 @@
+.subBannerWrape {
+  height: 332px;
+  background-color: #10504F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: none;
+}
+
+.subBannerWrape .subTitle {
+  font-family: Pacifico;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 70px;
+  color: #FFFFFF;
+}
+
+.subBannerWrape .subDesc {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.subBannerWrape .subFormWrape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subBannerWrape .subFormWrape #subForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subBannerWrape .subFormWrape #subEmailInput {
+  margin-left: 2em;
+  margin-right: 1em;
+  border-width: 0px;
+  width: 25vw;
+  height: 3vw;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.subBannerWrape .subFormWrape #subEmailInput::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.subBannerWrape .subFormWrape #subEmailInput:-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.subBannerWrape .subFormWrape #subEmailInput::-ms-input-placeholder {
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.subBannerWrape .subFormWrape #subEmailInput::placeholder {
+  text-align: center;
+  font-size: 1.5vw;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.subBannerWrape .subFormWrape #subEmailInput:focus {
+  outline-color: transparent;
+}
+
+.subBannerWrape .subFormWrape #subBtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 3vw;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  #subForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  #subEmailInput {
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .subTitle {
+    font-size: 20px !important;
+    line-height: 35px;
+    margin: 0px;
+  }
+  .subDesc {
+    font-size: 14px !important;
+    line-height: 17px;
+  }
+  .subFormWrape {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #subEmailInput {
+    display: none;
+  }
+  #subBtn {
+    margin-top: 2em;
+    height: 6vw !important;
+  }
+}
+/*# sourceMappingURL=SubscriptionBanner.css.map */

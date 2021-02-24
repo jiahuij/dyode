@@ -1,0 +1,33 @@
+.galleryWrape{
+    margin-top:2em;
+    margin-bottom: 7em;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.socialPic{
+    
+    margin-left: 1em;
+    margin-right: 1em;
+
+
+}
+
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+  
+@media (max-width: $breakpoint-tablet) {
+    .socialPic{
+        width: 28vw;
+    }
+
+    #a3{
+        display: none;
+    }
+  
+    #a4{
+      display: none;
+  }
+}
