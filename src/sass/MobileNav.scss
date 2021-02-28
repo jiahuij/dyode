@@ -3,9 +3,13 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    left: 36px;
-    top: 36px;
+    left: 1.8vw;
+    top: 1.8vw;
     display: none;
+  }
+
+  .react-burger-menu-btn:focus{
+    outline: none;
   }
   
   /* Color/shape of burger icon bars */
@@ -41,8 +45,9 @@
   /* General sidebar styles */
   .bm-menu {
     background: #FFFFFF;
-    padding: 2.5em 1.5em 0;
+    padding-top: 2.5em;
     font-size: 1.15em;
+    overflow: hidden !important;
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -53,12 +58,14 @@
   /* Wrapper for item list */
   .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+
   }
   
   /* Individual item */
   .bm-item {
     display: inline-block;
+    padding-left: 2em;
+    padding-right: 1em;
   }
   
   /* Styling of overlay */
@@ -67,17 +74,16 @@
   }
 
   .bm-menu-wrap {
-   top: 58px;
+   top: 3vw;
    width: 80% !important;
    height: 100%; 
-   overflow: hidden;
 }
 .bm-overlay{
-    top: 58px;
+    top: 3vw;
 }
 
 .bm-item-list {
-    height: 90% !important; 
+    height: 100% !important; 
     overflow: hidden;
     text-align: start;
  }
@@ -97,10 +103,20 @@
     padding-left: 0%;
     text-transform: none;
   }
-.panel-close {
+.panel-closes {
     max-height: 0!important;
 }
 
+
+.panel-collapse li:hover {
+  text-underline-position: under;
+  text-decoration: underline;
+}
+
+.dropdownMenu li:hover {
+  text-underline-position: under;
+  text-decoration: underline;
+}
 
 
   
@@ -108,11 +124,31 @@ $breakpoint-tablet: 768px;
 @media (max-width: 1100px) {
     .bm-burger-button{
         position: absolute;
-        top: 55px !important;
+        top: 2vw !important;
         display:block;
     }
 
-    
+    .dropdownMenu{
+      font-size: 2vw;
+    }
+    .dropdownImg{
+      height: 20vw;
+      }
 }
+
+@media (max-width: $breakpoint-tablet) {
+  .bm-burger-button{
+      position: absolute;
+      top: 3.5vw !important;
+      display:block;
+  }
+
+  .panel-collapse {
+    font-size: 2vw;
+  }
+
+  
+}
+
 
 

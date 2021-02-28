@@ -1,15 +1,21 @@
 .BannerSlider {
-  margin-top: 5em;
-  background-color: #EFEFEF;
-  width: 100%;
+  margin-top: 7vw;
 }
 
-.BannerSlider .wrape {
-  left: 70%;
-  bottom: 15%;
+@media (max-width: 768px) {
+  .BannerSlider .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #EFEFEF;
+  }
 }
 
-.BannerSlider .wrape .shopBtn {
-  background-color: #10504F;
+@media (max-width: 480px) {
+  .long {
+    width: 90%;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=FavoriteBanner.css.map */

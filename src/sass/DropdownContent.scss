@@ -4,8 +4,8 @@
     top: 100%;
     z-index: 100;
     position: absolute;
-    width: 60%;
-    height: 400px;
+    width: fit-content;
+    height: fit-content;
 
     max-height: 0;
     overflow: hidden;
@@ -20,6 +20,7 @@
         justify-content: center;
         align-items: flex-start;
         width: 60%;
+        height: fit-content;
         background-color: #EFEFEF;
     }
  
@@ -40,6 +41,7 @@
 
     .dropdownMenu li{
         padding-left: 0% !important;
+        white-space: nowrap;
     }
 
     .rightContent{

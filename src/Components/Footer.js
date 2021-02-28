@@ -9,8 +9,8 @@ export class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          open1: false,
-          open2: false,
+          open1: true,
+          open2: true,
         }
       }
 
@@ -19,7 +19,7 @@ export class Footer extends Component {
         var collapIcon2 = this.state.open2? "+": "-"
         return (
             <div className="Footer">
-                <div className="services">
+                <div className="services"> 
                     <h2 onClick={function(){this.setState({open1:!this.state.open1})}.bind(this)} 
                                 className="footerTitle">Customer Service <span>{collapIcon1}</span></h2>
                     <ul className={this.state.open1? "panel-collapse": "panel-collapse panel-close"}>

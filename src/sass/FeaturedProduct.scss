@@ -11,11 +11,15 @@
 .cursiveHeader{
     color:#000000 ;
     font-family: Pacifico;
-    font-size: 60px;
-    line-height: 105px;
+    font-size: 3.125vw;
+    line-height: 5.46875vw;
     text-transform: none;
     margin: 1em;
 
+}
+
+.arrowBtn img{
+    height: 30px;
 }
 
 
@@ -26,8 +30,21 @@ $breakpoint-phone: 480px;
   
 @media (max-width: $breakpoint-tablet) {
     .cursiveHeader{
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 3.125vw;
+    line-height: 5.46875vw;
+    
+    }
+
+    .arrowBtn img{
+        height: 20px;
+    }
+    
+}
+
+  
+@media (max-width: $breakpoint-phone) {
+    .cursiveHeader{
+        font-size: 5vw;
     
     }
 }

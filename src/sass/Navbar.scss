@@ -1,11 +1,30 @@
 $bgColor: #10504F; 
 $textColor: #FFFFFF;
 
+
+.top{
+    height: 10.2vw;
+}
+
+.topBanner{
+    background-color: #000000;
+    line-height: 3vw;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 3vw;
+    z-index: 100;
+    font-size: 12px;
+}
+    
+
+
 .nav{
+    top: 3vw;
     background-color: $bgColor;
     position: relative;
     width: 100%;
-    height: 138px;
+    height: 7.1875vw;
     
     display: flex;
     justify-content: center;
@@ -14,10 +33,17 @@ $textColor: #FFFFFF;
 
     .site-logo{
      position: absolute;
-     width: 93px;
-     height: 77px;
      left:48px;
+     z-index: 100;
     }
+
+    .site-logo img{
+        width: 4.8vw;
+        height: 4vw;
+       }
+
+
+
 
     .navmenu {
         list-style: none; 
@@ -30,8 +56,8 @@ $textColor: #FFFFFF;
     .navmenu li {
         padding: 10px 30px;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.3vw;
+        line-height: 1.3vw;
         box-sizing: inherit;
         
     }
@@ -40,12 +66,12 @@ $textColor: #FFFFFF;
         display: flex;
         position: absolute;
         align-items: center;
-        right:48px;
+        right:2.5vw;
     }
 
     .icon{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 1vw;
+        padding-right: 1vw;
     }
 
     .dropdownContent:hover{
@@ -63,11 +89,12 @@ $textColor: #FFFFFF;
 
     #searchInput{
         width: 278px;
-        height: 37px;
+        height: 36px;
         background: #FFFFFF;
         border: 1px solid #000000;
         box-sizing: border-box;
         padding-left: 1em;
+        padding-right: 0%;
         font-size: 16px;
         line-height: 26px;
         font-weight: 400;
@@ -86,6 +113,7 @@ $textColor: #FFFFFF;
 
     #searchBtn{
         width: 56px;
+        padding:0%;
         height: 36px;
         background: #000000;
         border: none;
@@ -95,17 +123,18 @@ $textColor: #FFFFFF;
     .menuPic{
         background-color: #EFEFEF;
         display: flex !important;
-        height: 35%;
-        width: 100%;
+        height: 25vw;
+        width: -webkit-fill-available;
         justify-content: center;
         align-items: center;
         position: absolute;
         left: 0;
-        bottom: 5%;
+        bottom: 3vw;
     }
 
     .BurgerTitle{
         font-weight: 300;
+        cursor: pointer;
     }
     span{float:right;}
 
@@ -122,8 +151,25 @@ $textColor: #FFFFFF;
         overflow: hidden;
         max-width: 0;
     }
-    
 
+    .bm-burger-button {
+        width: 3vw;
+        height: 3vw;
+        }
+
+    #searchFormMobile{
+        display: flex;
+    justify-content: end;
+    }
+
+    .menuLine{
+        border-top: 0.5px solid #F1F1EF;
+        border-bottom: 0px;
+    }
+
+    .menuLine:focus{
+        outline:none;
+    }
 
 }
 
@@ -142,11 +188,15 @@ $breakpoint-tablet: 768px;
     }
 
     .nav .site-logo {
-        position: absolute;
-        width: 93px;
-        height: 77px;
-        left: 120px;
+
+        left: 7.5vw;
+        height: 4vw;
     }
+
+    .nav .site-logo img{
+        width: 4.8vw;
+        height: 4vw;
+       }
     #searchForm{
         overflow: hidden;
         max-width: 0;
@@ -156,7 +206,79 @@ $breakpoint-tablet: 768px;
         padding: 0.5em !important;
     }
 
+    
+    .nav #searchInput {
+        width: 50vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+
+    .nav #searchInput ::placeholder {
+        padding-left: 0;
+        font-size: 10vw;
+        line-height: 1vw;
+        font-weight: 300;
+    }
+
+    #searchInput::placeholder {
+
+        font-size: 2vw !important;
+        line-height: 2vw !important;
+    }
+
+
+    .nav #searchBtn {
+        width: 7vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+
+
+
+
 }
+
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+
+    .top{
+        height: 13vw;
+    }
+    .nav{
+        height: 10vw;
+    }
+
+
+    .topBanner{
+        height: 4vw;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+        
+    .nav .icon {
+        height: 3vw;
+    }
+
+    .BurgerTitle{
+        font-size: 3vw;
+    }
+
+}
+
+
+
+$breakpoint-phone: 480px;
+@media (max-width: $breakpoint-tablet) {
+
+    .icon img{
+        height: 3vw;
+    }
+    
+
+}
+
+
 
 
 

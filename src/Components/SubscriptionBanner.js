@@ -24,7 +24,7 @@ export class SubscriptionBanner extends Component {
     render() {
         return (
             <div className="subBannerWrape">
-                <h1 className="subTitle"><img src={mailIcon} alt='mail icon'></img> Sign Up & Stay Connected</h1>
+                <h1 className="SubscTitle"><img className='mailIcon' src={mailIcon} alt='mail icon'></img> Sign Up & Stay Connected</h1>
                 <div className="subFormWrape">
                     <p className="subDesc">Sign up for the newsletter and get 20% off! Gain access to exclusive <br/>offers and be the first to know when new stuff drops!</p>
                     <form id="subForm" onSubmit={this.handleSubmit}>

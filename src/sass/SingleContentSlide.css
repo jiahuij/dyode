@@ -1,22 +1,45 @@
 .slider {
-  height: 80vh;
-  width: 97%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 2em;
+}
+
+.sliderImg {
+  width: 100%;
 }
 
 .wrape {
-  position: relative;
-  height: 100%;
+  position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0%;
+  height: 100%;
   left: 10%;
+  z-index: 100;
+  color: #10504F;
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.wrapeRight {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 25vw;
+  left: 65%;
   z-index: 100;
   color: #10504F;
   text-transform: none;
@@ -38,28 +61,44 @@
 .header {
   margin: 0px;
   font-family: Pacifico;
-  font-size: 60px;
-  line-height: 105px;
+  font-size: 3vw;
 }
 
 .subTitle {
-  font-size: 26px;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  font-size: 1.3vw;
   line-height: 31px;
 }
 
 .shopBtn {
   color: white;
   background-color: #000000;
-  width: 129px;
-  height: 43px;
+  font-size: 1.3vw;
+  padding: 1.5vw;
+  line-height: 1px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.2vw;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+.shopBtn:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 @media (max-width: 768px) {
   .slider {
-    background-size: contain !important;
-    height: 80vw;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
   }
   .carousel .slider {
     background-color: #EFEFEF;
@@ -71,6 +110,24 @@
     height: fit-content;
     -ms-flex-item-align: end;
         align-self: flex-end;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+  }
+  .wrapeRight {
+    color: #10504F !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding-top: 10%;
     padding-bottom: 10%;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -81,42 +138,43 @@
     left: 0;
   }
   .header {
-    font-size: 26px;
-    line-height: 50px;
+    font-size: 6vw;
   }
   .subTitle {
-    font-size: 14px;
-    line-height: 15px;
+    margin-top: 3vw !important;
+    margin-bottom: 3vw !important;
+    font-size: 3vw;
   }
   .shopBtn {
-    color: white;
-    background-color: #000000;
-    width: 129px;
-    height: 43px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
+    width: 16.7vw;
+    height: 6vw;
+    font-size: 2vw;
   }
   .carousel .control-dots {
-    bottom: 45%;
+    bottom: 48%;
+  }
+  .shopBtn:hover {
+    color: #FFFFFF;
+    background-color: #10504F;
   }
 }
 
 @media (max-width: 480px) {
-  .wrape {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding-bottom: 5%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
+  .header {
+    font-size: 6vw;
+  }
+  .subTitle {
+    margin-top: 3vw !important;
+    margin-bottom: 3vw !important;
+    font-size: 3vw;
+  }
+  .shopBtn {
+    width: 30vw;
+    height: 8vw;
+    font-size: 4vw;
+  }
+  .carousel .control-dots {
+    bottom: 50%;
   }
 }
 /*# sourceMappingURL=SingleContentSlide.css.map */

@@ -8,8 +8,7 @@ export class FavoriteBanner extends Component {
     render() {
         return (
             <div className="BannerSlider">
-
-                <SingleSlide className="Banner" img={favoriteImg} header="Our Favorite Tees"
+                <SingleSlide clas='wrapeRight' img={favoriteImg} header="Our Favorite Tees"
                             subTitle="Everyday tees you need." color="#FFFFFF"  
                             />
             </div>

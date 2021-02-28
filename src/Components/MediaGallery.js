@@ -14,7 +14,7 @@ export class MediaGallery extends Component {
         return (
             <div>
                 <h1 className='cursiveHeader'>Follow Us On Instagram</h1>
-                <div className="galleryWrape">
+                <div className="row">
                    
                    {gallery.map(pic =>(
                        <img className="socialPic" id={'a'+n++}  src={pic} alt='social pictures' key={uuidv4()}></img>
@@ -27,3 +27,4 @@ export class MediaGallery extends Component {
 }
 
 export default MediaGallery
+ 

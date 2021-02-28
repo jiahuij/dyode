@@ -1,13 +1,13 @@
-.galleryWrape{
+.row{
     margin-top:2em;
-    margin-bottom: 7em;
+    margin-bottom: 6vw;
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
 .socialPic{
-    
+    height: 15vw;
     margin-left: 1em;
     margin-right: 1em;
 
@@ -20,7 +20,8 @@ $breakpoint-phone: 480px;
   
 @media (max-width: $breakpoint-tablet) {
     .socialPic{
-        width: 28vw;
+        width: 20vw;
+        height: 20vw;
     }
 
     #a3{

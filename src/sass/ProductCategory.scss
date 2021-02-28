@@ -17,7 +17,17 @@ $breakpoint-tablet: 768px;
     display: block;
     }
 .long{
-    width: 85%;
+    width: 88%;
     margin: auto;
 }
+}
+
+
+$breakpoint-phone: 480px;
+  
+@media (max-width: $breakpoint-phone) {
+    .long{
+        width: 90%;
+        margin: auto;
+    }
 }

@@ -21,7 +21,14 @@
     display: block;
   }
   .long {
-    width: 85%;
+    width: 88%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .long {
+    width: 90%;
     margin: auto;
   }
 }

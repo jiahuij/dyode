@@ -1,5 +1,5 @@
 .Footer {
-  padding: 6em;
+  padding: 5vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -18,21 +18,22 @@
 
 .Footer .footerTitle {
   font-family: Pacifico;
-  font-size: 22px;
+  font-size: 2vw;
   line-height: 39px;
   font-weight: 400;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .Footer .footerMenuItem {
   list-style: none;
-  font-size: 18px;
-  line-height: 50px;
+  font-size: 1vw;
+  line-height: 2.6vw;
   font-weight: 400;
 }
 
 .Footer .services {
-  margin-right: 6em;
+  margin-right: 5vw;
 }
 
 .Footer .social {
@@ -57,9 +58,6 @@
 
 .Footer .panel-close {
   max-height: 500px;
-  overflow: hidden;
-  -webkit-transition: max-height .5s ease;
-  transition: max-height .5s ease;
 }
 
 .Footer span {
@@ -75,8 +73,8 @@
             flex-direction: column;
   }
   .footerTitle {
-    font-size: 22px;
-    line-height: 39px;
+    font-size: 3vw !important;
+    line-height: 4vw !important;
   }
   .Footer .services {
     margin-right: 0;
@@ -91,6 +89,21 @@
   span {
     display: inline !important;
     float: right;
+  }
+  .footerMenuItem {
+    list-style: none;
+    font-size: 2vw !important;
+    line-height: 5vw !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer .footerTitle {
+    font-size: 5vw;
+  }
+  .Footer .footerMenuItem {
+    font-size: 2.5vw !important;
+    line-height: 7vw !important;
   }
 }
 /*# sourceMappingURL=Footer.css.map */

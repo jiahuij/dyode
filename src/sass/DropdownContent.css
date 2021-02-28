@@ -6,8 +6,12 @@
   top: 100%;
   z-index: 100;
   position: absolute;
-  width: 60%;
-  height: 400px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-in;
@@ -26,6 +30,9 @@
       -ms-flex-align: start;
           align-items: flex-start;
   width: 60%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #EFEFEF;
 }
 
@@ -46,6 +53,7 @@
 
 .dropdownContent .dropdownMenu li {
   padding-left: 0% !important;
+  white-space: nowrap;
 }
 
 .dropdownContent .rightContent {

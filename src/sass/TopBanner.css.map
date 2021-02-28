@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,QAAQ,CAAA;EACJ,gBAAgB,EAHV,OAAO;EAIb,WAAW,EAAE,IAAI;EACjB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
-    "sources": [
-        "TopBanner.scss"
-    ],
-    "names": [],
-    "file": "TopBanner.css"
-}

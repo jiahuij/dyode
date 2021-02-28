@@ -1,15 +1,23 @@
 .BannerSlider{
-    margin-top:5em;
-    background-color:#EFEFEF ;
-    width: 100%;
-} 
-.BannerSlider .wrape{
-    
-    left: 70%;
-    bottom: 15%;
+    margin-top: 7vw;
 }
 
-.BannerSlider .wrape .shopBtn{
-    background-color: #10504F;
+$breakpoint-tablet: 768px;
+  
+@media (max-width: $breakpoint-tablet) {
+ .BannerSlider .slider{
+     flex-direction: column;
+     background-color: #EFEFEF;
+
+ }
 }
 
+
+$breakpoint-phone: 480px;
+  
+@media (max-width: $breakpoint-phone) {
+    .long{
+        width: 90%;
+        margin: auto;
+    }
+}

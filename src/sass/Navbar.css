@@ -1,8 +1,24 @@
+.top {
+  height: 10.2vw;
+}
+
+.topBanner {
+  background-color: #000000;
+  line-height: 3vw;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 3vw;
+  z-index: 100;
+  font-size: 12px;
+}
+
 .nav {
+  top: 3vw;
   background-color: #10504F;
   position: relative;
   width: 100%;
-  height: 138px;
+  height: 7.1875vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,9 +32,13 @@
 
 .nav .site-logo {
   position: absolute;
-  width: 93px;
-  height: 77px;
   left: 48px;
+  z-index: 100;
+}
+
+.nav .site-logo img {
+  width: 4.8vw;
+  height: 4vw;
 }
 
 .nav .navmenu {
@@ -35,8 +55,8 @@
 .nav .navmenu li {
   padding: 10px 30px;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.3vw;
+  line-height: 1.3vw;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -49,12 +69,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: 48px;
+  right: 2.5vw;
 }
 
 .nav .icon {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 
 .nav .dropdownContent:hover {
@@ -72,12 +92,13 @@
 
 .nav #searchInput {
   width: 278px;
-  height: 37px;
+  height: 36px;
   background: #FFFFFF;
   border: 1px solid #000000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 1em;
+  padding-right: 0%;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -117,6 +138,7 @@
 
 .nav #searchBtn {
   width: 56px;
+  padding: 0%;
   height: 36px;
   background: #000000;
   border: none;
@@ -128,8 +150,8 @@
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
-  height: 35%;
-  width: 100%;
+  height: 25vw;
+  width: -webkit-fill-available;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,11 +160,12 @@
           align-items: center;
   position: absolute;
   left: 0;
-  bottom: 5%;
+  bottom: 3vw;
 }
 
 .nav .BurgerTitle {
   font-weight: 300;
+  cursor: pointer;
 }
 
 .nav span {
@@ -164,6 +187,29 @@
   max-width: 0;
 }
 
+.nav .bm-burger-button {
+  width: 3vw;
+  height: 3vw;
+}
+
+.nav #searchFormMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.nav .menuLine {
+  border-top: 0.5px solid #F1F1EF;
+  border-bottom: 0px;
+}
+
+.nav .menuLine:focus {
+  outline: none;
+}
+
 @media (max-width: 1100px) {
   .navmenu li {
     display: none !important;
@@ -175,10 +221,12 @@
             justify-content: flex-end;
   }
   .nav .site-logo {
-    position: absolute;
-    width: 93px;
-    height: 77px;
-    left: 120px;
+    left: 7.5vw;
+    height: 4vw;
+  }
+  .nav .site-logo img {
+    width: 4.8vw;
+    height: 4vw;
   }
   #searchForm {
     overflow: hidden;
@@ -187,6 +235,82 @@
   #mobileSearch {
     max-width: 100em !important;
     padding: 0.5em !important;
+  }
+  .nav #searchInput {
+    width: 50vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+  .nav #searchInput ::-webkit-input-placeholder {
+    padding-left: 0;
+    font-size: 10vw;
+    line-height: 1vw;
+    font-weight: 300;
+  }
+  .nav #searchInput :-ms-input-placeholder {
+    padding-left: 0;
+    font-size: 10vw;
+    line-height: 1vw;
+    font-weight: 300;
+  }
+  .nav #searchInput ::-ms-input-placeholder {
+    padding-left: 0;
+    font-size: 10vw;
+    line-height: 1vw;
+    font-weight: 300;
+  }
+  .nav #searchInput ::placeholder {
+    padding-left: 0;
+    font-size: 10vw;
+    line-height: 1vw;
+    font-weight: 300;
+  }
+  #searchInput::-webkit-input-placeholder {
+    font-size: 2vw !important;
+    line-height: 2vw !important;
+  }
+  #searchInput:-ms-input-placeholder {
+    font-size: 2vw !important;
+    line-height: 2vw !important;
+  }
+  #searchInput::-ms-input-placeholder {
+    font-size: 2vw !important;
+    line-height: 2vw !important;
+  }
+  #searchInput::placeholder {
+    font-size: 2vw !important;
+    line-height: 2vw !important;
+  }
+  .nav #searchBtn {
+    width: 7vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    height: 13vw;
+  }
+  .nav {
+    height: 10vw;
+  }
+  .topBanner {
+    height: 4vw;
+    font-size: 2vw;
+    line-height: 4vw;
+  }
+  .nav .icon {
+    height: 3vw;
+  }
+  .BurgerTitle {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon img {
+    height: 3vw;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

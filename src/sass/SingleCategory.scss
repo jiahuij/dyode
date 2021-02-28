@@ -1,7 +1,7 @@
 .category{
     display: flex;
     flex-direction: column-reverse;
-    margin: 50px 30px;
+    margin: 2.6vw 1.5vw;
     width: 30vw;
     height: 40vw;
     text-transform: none;
@@ -9,11 +9,11 @@
 }
 
 .categoryTitle{
-    font-size: 40px;
+    font-size: 2vw;
     font-family: Pacifico;
     background-color: #10504F;
-    line-height: 100px;
-    height: 114px;
+    line-height: 5vw;
+    height: 6vw;
     width: 100%;
     margin: 0;
 }
@@ -28,9 +28,8 @@ $breakpoint-tablet: 768px;
     }
 
 .categoryTitle{
-    font-size: 30px;
-    line-height: 60px;
-    height: 70px;
-    width: 100%;
+    font-size: 4vw;
+    line-height: 9vw;
+    height: 9vw;
 }
 }

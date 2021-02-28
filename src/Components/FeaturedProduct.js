@@ -28,6 +28,7 @@ export default () => {
 
 
   const chevronWidth = 40;
+  
   var products = [
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
@@ -36,6 +37,7 @@ export default () => {
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img}]
+  var numAProductDisplay = Math.round(window.innerWidth/500);
 
   return (
     <div style={{ padding: `0 ${chevronWidth}px` }}>
@@ -43,7 +45,7 @@ export default () => {
       <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
-        numberOfCards={Math.round(window.innerWidth/500)}
+        numberOfCards={Math.min(Math.max(numAProductDisplay, 2), 4)}
         gutter={20}
         leftChevron={<button className='arrowBtn' ><img src={leftArrow} alt='Left Arrow'></img></button>}
         rightChevron={<button className='arrowBtn'><img src={rightArrow} alt='Right Arrow'></img></button>}
@@ -53,7 +55,7 @@ export default () => {
 
         {products.map(product => (
 
-            <Product productTitle={product.productTitle} productDesc={product.productDesc}
+            <Product t={value} productTitle={product.productTitle} productDesc={product.productDesc}
             productPrice= {product.productPrice} productImg={product.productImg } key={uuidv4()} />
 
          ))}

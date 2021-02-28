@@ -1,5 +1,5 @@
 .subBannerWrape {
-  height: 332px;
+  height: 17vw;
   background-color: #10504F;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,20 +12,29 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: none;
+  padding: 3vw;
 }
 
-.subBannerWrape .subTitle {
+.subBannerWrape .SubscTitle {
   font-family: Pacifico;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 3vw;
+  line-height: 3vw;
   color: #FFFFFF;
+  margin-bottom: 3vw;
+  margin-top: 0;
+}
+
+.subBannerWrape .mailIcon {
+  height: 3vw;
 }
 
 .subBannerWrape .subDesc {
-  font-size: 22px;
-  line-height: 26px;
+  text-align: left;
+  font-size: 1.1vw;
+  line-height: 1.1vw;
   font-weight: 400;
+  white-space: normal;
 }
 
 .subBannerWrape .subFormWrape {
@@ -35,6 +44,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .subBannerWrape .subFormWrape #subForm {
@@ -47,8 +58,8 @@
 }
 
 .subBannerWrape .subFormWrape #subEmailInput {
-  margin-left: 2em;
-  margin-right: 1em;
+  margin-left: 2vw;
+  margin-right: 1vw;
   border-width: 0px;
   width: 25vw;
   height: 3vw;
@@ -58,74 +69,77 @@
 }
 
 .subBannerWrape .subFormWrape #subEmailInput::-webkit-input-placeholder {
-  text-align: center;
-  font-size: 1.5vw;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 1vw;
 }
 
 .subBannerWrape .subFormWrape #subEmailInput:-ms-input-placeholder {
-  text-align: center;
-  font-size: 1.5vw;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 1vw;
 }
 
 .subBannerWrape .subFormWrape #subEmailInput::-ms-input-placeholder {
-  text-align: center;
-  font-size: 1.5vw;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 1vw;
 }
 
 .subBannerWrape .subFormWrape #subEmailInput::placeholder {
-  text-align: center;
-  font-size: 1.5vw;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 1vw;
 }
 
 .subBannerWrape .subFormWrape #subEmailInput:focus {
   outline-color: transparent;
+  border: none;
 }
 
 .subBannerWrape .subFormWrape #subBtn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 3vw;
+  padding: 1vw;
+  height: 3.5vw;
   letter-spacing: 0.1em;
   background-color: transparent;
   color: #FFFFFF;
   text-transform: uppercase;
-  border: 2px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  max-height: 3.2vw;
+  font-size: 1vw;
+  line-height: 1vw;
 }
 
-@media (max-width: 1440px) {
-  #subForm {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-  }
-  #subEmailInput {
-    margin-bottom: 1em;
+.subBannerWrape .subFormWrape #subBtn:focus {
+  outline-color: transparent;
+}
+
+.subBannerWrape .subFormWrape #subBtn:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 1px solid #FFFFFF;
+  border-radius: 0;
+  outline: none;
+}
+
+@media (max-width: 1040px) {
+  .subDesc {
+    font-size: 1.3vw !important;
+    line-height: 1.5vw !important;
   }
 }
 
 @media (max-width: 768px) {
-  .subTitle {
-    font-size: 20px !important;
-    line-height: 35px;
-    margin: 0px;
-  }
-  .subDesc {
-    font-size: 14px !important;
-    line-height: 17px;
+  .subBannerWrape {
+    height: 50vw !important;
   }
   .subFormWrape {
     -webkit-box-orient: vertical;
@@ -133,12 +147,35 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #subEmailInput {
-    display: none;
+  .subBannerWrape .SubscTitle {
+    font-size: 5vw;
+  }
+  .subBannerWrape .mailIcon {
+    height: 5vw;
+  }
+  .subDesc {
+    text-align: center !important;
+    font-size: 3vw !important;
+    line-height: 3vw !important;
   }
   #subBtn {
     margin-top: 2em;
     height: 6vw !important;
+    padding: 2vw 3vw !important;
+    max-height: none !important;
+    font-size: 2vw !important;
+  }
+  .subBannerWrape .subFormWrape #subForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subBannerWrape .subFormWrape #subForm #subEmailInput {
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=SubscriptionBanner.css.map */

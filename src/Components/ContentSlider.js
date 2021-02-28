@@ -16,10 +16,10 @@ export class ContentSlider extends Component {
     
     
         return (
-            <Carousel showArrows={false} autoPlay={false} showThumbs={false} showStatus={false}>
-                <SingleSlide img={slideImg1} header={header} subTitle={subTitle} color="#10504F"  />
-                <SingleSlide img={slideImg2} header={header} subTitle={subTitle} color="#FFFFFF"/>
-                <SingleSlide img={slideImg3} header={header} subTitle={subTitle} color="#FFFFFF"/>
+            <Carousel showArrows={false} autoPlay={true} showThumbs={false} showStatus={false}>
+                <SingleSlide clas='wrape' img={slideImg1} header={header} subTitle={subTitle} color="#10504F"  />
+                <SingleSlide clas='wrape' img={slideImg2} header={header} subTitle={subTitle} color="#FFFFFF"/>
+                <SingleSlide clas='wrape' img={slideImg3} header={header} subTitle={subTitle} color="#FFFFFF"/>
             </Carousel>
         )
     }

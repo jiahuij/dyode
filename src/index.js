@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 
-import TopBanner from './Components/TopBanner'
 import Navbar from './Components/Navbar'
 import ContentSlider from './Components/ContentSlider'
 import Categories from './Components/ProductCategory'
@@ -16,7 +15,6 @@ import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <TopBanner />
     <Navbar />
     <ContentSlider />
     <Categories />
