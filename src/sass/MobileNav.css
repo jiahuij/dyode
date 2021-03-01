@@ -144,4 +144,13 @@
     font-size: 2vw;
   }
 }
+
+@media (max-width: 480px) {
+  .bm-menu-wrap {
+    top: 6vw;
+  }
+  .bm-overlay {
+    top: 6vw;
+  }
+}
 /*# sourceMappingURL=MobileNav.css.map */

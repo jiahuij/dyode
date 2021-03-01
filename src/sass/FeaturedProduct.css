@@ -8,6 +8,18 @@
   outline: transparent;
 }
 
+.arrowBtn img {
+  height: 30px;
+}
+
+.wrapeRight .shopBtn {
+  background-color: #10504F;
+}
+
+.wrapeRight .shopBtn:hover {
+  background-color: #FFFFFF;
+}
+
 .cursiveHeader {
   color: #000000;
   font-family: Pacifico;
@@ -17,23 +29,25 @@
   margin: 1em;
 }
 
-.arrowBtn img {
-  height: 30px;
-}
-
 @media (max-width: 768px) {
   .cursiveHeader {
-    font-size: 3.125vw;
+    font-size: 5vw;
     line-height: 5.46875vw;
   }
-  .arrowBtn img {
-    height: 20px;
+  .wrapeRight .shopBtn {
+    background-color: #000000;
+  }
+  .wrapeRight .shopBtn:hover {
+    background-color: #10504F;
   }
 }
 
 @media (max-width: 480px) {
   .cursiveHeader {
     font-size: 5vw;
+  }
+  .arrowBtn img {
+    height: 20px;
   }
 }
 /*# sourceMappingURL=FeaturedProduct.css.map */

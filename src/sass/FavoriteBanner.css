@@ -11,11 +11,4 @@
     background-color: #FFFFFF;
   }
 }
-
-@media (max-width: 480px) {
-  .long {
-    width: 90%;
-    margin: auto;
-  }
-}
 /*# sourceMappingURL=FavoriteBanner.css.map */

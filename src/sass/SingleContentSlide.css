@@ -59,14 +59,13 @@
 }
 
 .header {
-  margin: 0px;
   font-family: Pacifico;
   font-size: 3vw;
 }
 
 .subTitle {
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
   font-size: 1.3vw;
   line-height: 31px;
 }
@@ -74,7 +73,7 @@
 .shopBtn {
   color: white;
   background-color: #000000;
-  font-size: 1.3vw;
+  font-size: 1vw;
   padding: 1.5vw;
   line-height: 1px;
   width: -webkit-fit-content;
@@ -139,19 +138,21 @@
   }
   .header {
     font-size: 6vw;
+    margin: auto;
   }
   .subTitle {
-    margin-top: 3vw !important;
-    margin-bottom: 3vw !important;
+    margin-top: 5vw !important;
+    margin-bottom: 5vw !important;
     font-size: 3vw;
   }
   .shopBtn {
-    width: 16.7vw;
-    height: 6vw;
+    width: 19vw;
+    height: 7vw;
     font-size: 2vw;
+    line-height: 1vw;
   }
   .carousel .control-dots {
-    bottom: 48%;
+    bottom: 50%;
   }
   .shopBtn:hover {
     color: #FFFFFF;
@@ -160,21 +161,21 @@
 }
 
 @media (max-width: 480px) {
+  .carousel .slider {
+    height: 100%;
+  }
   .header {
     font-size: 6vw;
   }
   .subTitle {
-    margin-top: 3vw !important;
-    margin-bottom: 3vw !important;
+    margin-top: 0vw !important;
+    margin-bottom: 0vw !important;
     font-size: 3vw;
   }
   .shopBtn {
     width: 30vw;
     height: 8vw;
-    font-size: 4vw;
-  }
-  .carousel .control-dots {
-    bottom: 50%;
+    font-size: 3vw;
   }
 }
 /*# sourceMappingURL=SingleContentSlide.css.map */

@@ -18,7 +18,7 @@
 
 .Footer .footerTitle {
   font-family: Pacifico;
-  font-size: 2vw;
+  font-size: 1.5vw;
   line-height: 39px;
   font-weight: 400;
   cursor: pointer;
@@ -30,6 +30,10 @@
   font-size: 1vw;
   line-height: 2.6vw;
   font-weight: 400;
+}
+
+.Footer .footerMenuItem img {
+  height: 2vw;
 }
 
 .Footer .services {
@@ -45,8 +49,8 @@
 }
 
 .Footer #insIcon {
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 .Footer .panel-collapse {
@@ -94,6 +98,9 @@
     list-style: none;
     font-size: 2vw !important;
     line-height: 5vw !important;
+  }
+  .footerMenuItem img {
+    height: 3vw !important;
   }
 }
 
