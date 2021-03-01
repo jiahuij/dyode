@@ -1,3 +1,6 @@
+  $breakpoint-tablet: 768px;
+  $breakpoint-phone: 480px;
+
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
@@ -119,8 +122,7 @@
 }
 
 
-  
-$breakpoint-tablet: 768px;
+
 @media (max-width: 1100px) {
     .bm-burger-button{
         position: absolute;
@@ -148,6 +150,18 @@ $breakpoint-tablet: 768px;
   }
 
   
+}
+
+
+@media (max-width: $breakpoint-phone) {
+ 
+  .bm-menu-wrap {
+    top: 6vw;
+}
+  .bm-overlay {
+    top: 6vw;
+  }
+    
 }
 
 

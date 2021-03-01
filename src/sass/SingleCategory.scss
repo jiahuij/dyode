@@ -1,3 +1,6 @@
+$breakpoint-tablet: 768px;
+
+//Single Product category card
 .category{
     display: flex;
     flex-direction: column-reverse;
@@ -8,6 +11,7 @@
     background-size: cover;
 }
 
+//Category title
 .categoryTitle{
     font-size: 2vw;
     font-family: Pacifico;
@@ -18,7 +22,7 @@
     margin: 0;
 }
 
-$breakpoint-tablet: 768px;
+
   
 @media (max-width: $breakpoint-tablet) {
 .category{

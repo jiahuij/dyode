@@ -5,6 +5,7 @@ import '../sass/DropdownContent.scss'
 export class DropdownContent extends Component {
     render() {
         return (
+            // nav menu dropdown submenu contentW
             <div className="dropdownContent">
                 <div className="leftContent">
                     <img className='dropdownImg' src={dropdownImg} alt = 'dropdown pic'></img>

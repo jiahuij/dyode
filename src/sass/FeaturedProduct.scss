@@ -1,3 +1,9 @@
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+
+
+//left and right scrow arrow
 .arrowBtn{
     background-color: transparent;
     border: none;
@@ -8,6 +14,19 @@
     outline: transparent;
 }
 
+.arrowBtn img{
+    height: 30px;
+}
+
+.wrapeRight .shopBtn{
+    background-color: #10504F;
+}
+
+.wrapeRight .shopBtn:hover{
+    background-color: #FFFFFF;
+}
+
+//Header
 .cursiveHeader{
     color:#000000 ;
     font-family: Pacifico;
@@ -17,34 +36,24 @@
     margin: 1em;
 
 }
-
-.arrowBtn img{
-    height: 30px;
-}
-
-
-
-$breakpoint-tablet: 768px;
-$breakpoint-phone: 480px;
-
   
 @media (max-width: $breakpoint-tablet) {
+
     .cursiveHeader{
-        font-size: 3.125vw;
+    font-size: 5vw;
     line-height: 5.46875vw;
     
     }
 
-    .arrowBtn img{
-        height: 20px;
-    }
-    
 }
 
   
 @media (max-width: $breakpoint-phone) {
     .cursiveHeader{
         font-size: 5vw;
-    
     }
+    .arrowBtn img{
+        height: 20px;
+    }
+    
 }

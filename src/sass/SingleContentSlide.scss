@@ -1,74 +1,81 @@
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
+
+//Single slider
 .slider{
   display:flex
 }
 
+//slider background image
 .sliderImg{
   width: 100%;
 }
-  .wrape {
-    position: absolute;
-    width: fit-content;
-    height: 100%;
-    left: 10%;
-    z-index: 100;
-    color: #10504F;
-    text-transform: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-  }
 
-  .wrapeRight {
-    position: absolute;
-    width: fit-content;
-    height: 25vw;
-    left: 65%;
-    z-index: 100;
-    color: #10504F;
-    text-transform: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-  }
-  
-  
-  .header {
-    margin: 0px;
-    font-family: Pacifico;
-    font-size: 3vw;
+//Title and button section
+.wrape {
+  position: absolute;
+  width: fit-content;
+  height: 100%;
+  left: 10%;
+  z-index: 100;
+  color: #10504F;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
 
-  }
-  
-  .subTitle {
-    margin-top:3vw;
-    margin-bottom:3vw;
-    font-size: 1.3vw;
-    line-height: 31px;
-  }
-  
-  .shopBtn {
-    color: white;
-    background-color: #000000;
-    font-size: 1.3vw;
-    padding: 1.5vw;
-    line-height: 1px;
-    width: fit-content;
-    height: 2.2vw;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
-  }
+//Title and button section align to right
+.wrapeRight {
+  position: absolute;
+  width: fit-content;
+  height: 25vw;
+  left: 65%;
+  z-index: 100;
+  color: #10504F;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
 
-  .shopBtn:hover {
-    color: #000000;
-    background-color: #FFFFFF;
-  }
-  
-$breakpoint-tablet: 768px;
-$breakpoint-phone: 480px;
+// Slider header
+.header {
+  font-family: Pacifico;
+  font-size: 3vw;
+
+}
+
+// Slider subTitle
+.subTitle {
+  margin-top:2vw;
+  margin-bottom:2vw;
+  font-size: 1.3vw;
+  line-height: 31px;
+}
+
+// Slider button
+.shopBtn {
+  color: white;
+  background-color: #000000;
+  font-size: 1vw;
+  padding: 1.5vw;
+  line-height: 1px;
+  width: fit-content;
+  height: 2.2vw;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.shopBtn:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 
   
 @media (max-width: $breakpoint-tablet) {
@@ -77,7 +84,7 @@ $breakpoint-phone: 480px;
   }
   
   .carousel .slider {
-    background-color: #EFEFEF;
+    background-color: #FFFFFF;
 
 }
   .wrape {
@@ -108,23 +115,24 @@ $breakpoint-phone: 480px;
 
   .header {
     font-size: 6vw;
+    margin: auto;
   }
   
   .subTitle {
-    margin-top:3vw !important;
-    margin-bottom:3vw !important;
+    margin-top: 5vw !important;
+    margin-bottom: 5vw !important;
     font-size: 3vw;
   }
   
   .shopBtn {
-    width: 16.7vw;
-    height: 6vw;
+    width: 19vw;
+    height: 7vw;
     font-size: 2vw;
-    
+    line-height: 1vw;
   }
 
   .carousel .control-dots {
-    bottom: 48%;}
+    bottom: 50%;}
 
     .shopBtn:hover {
       color: #FFFFFF;
@@ -135,26 +143,21 @@ $breakpoint-phone: 480px;
 
 
 @media (max-width: $breakpoint-phone) {
-  .header {
-    font-size: 6vw;
-  }
-  
-  .subTitle {
-    margin-top:3vw !important;
-    margin-bottom:3vw !important;
-    font-size: 3vw;
-  }
-  
-  .shopBtn {
-    width: 30vw;
-    height: 8vw;
-    font-size: 4vw;
+    .header {
+      font-size: 6vw;
+    }
     
-  }
-   .carousel .control-dots {
-    bottom: 50%;
-  }
+    .subTitle {
+      margin-top:0vw !important;
+      margin-bottom:0vw !important;
+      font-size: 3vw;
+    }
+    
+    .shopBtn {
+      width: 30vw;
+      height: 8vw;
+      font-size: 3vw;
+      
+    }
 
-
-  
   }

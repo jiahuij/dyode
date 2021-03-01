@@ -1,11 +1,17 @@
 import React, { useState } from 'react'
+
+//resources
 import img from '../imgs/product_img.png'
 import leftArrow from '../imgs/left_arrow.png'
 import rightArrow from '../imgs/right_arrow.png'
-import ItemsCarousel from 'react-items-carousel'
-import { v4 as uuidv4 } from 'uuid';
 import Product from './Product'
 import '../sass/FeaturedProduct.scss'
+
+// Multi-item carousel library
+import ItemsCarousel from 'react-items-carousel'
+
+//universal unique id generating library
+import { v4 as uuidv4 } from 'uuid';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -19,8 +25,8 @@ export default () => {
   
   };
 
-
-  React.useEffect(() => {
+// listening to screen size changes to choose number of product to display
+  React.useEffect(() => { 
     window.addEventListener("resize", updateWidthAndHeight);
     return () => window.removeEventListener("resize", updateWidthAndHeight);
 });
@@ -29,6 +35,7 @@ export default () => {
 
   const chevronWidth = 40;
   
+  //product list
   var products = [
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
@@ -37,11 +44,13 @@ export default () => {
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img},
     {productTitle:"Product Title", productDesc:"Women's t-shirt", productPrice: '19.99', productImg:img}]
+
+  // calculate number of product based on screenSize
   var numAProductDisplay = Math.round(window.innerWidth/500);
 
   return (
-    <div style={{ padding: `0 ${chevronWidth}px` }}>
-        <h1 className='cursiveHeader'>New Arrivals</h1>
+    <div >
+        <h1 className='cursiveHeader'>Shop New Arrivals</h1>
       <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
         activeItemIndex={activeItemIndex}
@@ -53,8 +62,7 @@ export default () => {
         chevronWidth={chevronWidth}
       >
 
-        {products.map(product => (
-
+        {products.map(product => ( // Single Product Component
             <Product t={value} productTitle={product.productTitle} productDesc={product.productDesc}
             productPrice= {product.productPrice} productImg={product.productImg } key={uuidv4()} />
 

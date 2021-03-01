@@ -1,6 +1,10 @@
+$bg: #FFFFFF;
+$t: #000000;
+
+//Desktop Dropdown menu
 .dropdownContent{
     display: flex;
-    background-color: #FFFFFF;
+    background-color: $bg;
     top: 100%;
     z-index: 100;
     position: absolute;
@@ -13,7 +17,7 @@
     -webkit-transition: max-height 0.2s ease-in;
     transition: max-height 0.2s ease-in;
     
-
+    //left side of the dropdown content
     .leftContent{
         padding: 3em;
         display: flex;
@@ -21,22 +25,32 @@
         align-items: flex-start;
         width: 60%;
         height: fit-content;
-        background-color: #EFEFEF;
+        background-color: #FFFFFF;
     }
- 
+
+    //right side of the dropdown content
+    .rightContent{
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        background-color: $bg;
+    }
+
+    //drop down left and right sub-menus
     .dropdownMenu{
         margin: 0px;
         list-style: none;
         font-size: 22px;
         line-height: 40px;
         font-weight: 400;
-        color: #000000;
+        color: $t;
         text-align: start;
         text-transform: none;
     }
 
     .dropdownMenu a{
-        color: #000000;
+        color: $t;
     }
 
     .dropdownMenu li{
@@ -44,14 +58,7 @@
         white-space: nowrap;
     }
 
-    .rightContent{
-        padding: 3em;
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        background-color: #FFFFFF;
-    }
-
+    //drop down right menu title
     .dropdownCate{
         font-weight: 300;
         font-size: 16px;
@@ -59,6 +66,7 @@
         text-transform: uppercase;
     }
 
+    //drop down menu image
     .dropdownImg{
         object-fit: contain;
     }

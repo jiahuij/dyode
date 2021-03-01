@@ -1,3 +1,6 @@
+$breakpoint-tablet: 768px;
+
+//Return div
 .subBannerWrape{
     height: 17vw;
     background-color: #10504F;
@@ -7,6 +10,7 @@
     text-transform: none;
     padding: 3vw;
 
+    //Subscrip banner Title
     .SubscTitle{
         font-family: Pacifico;
         font-weight: 400;
@@ -17,18 +21,22 @@
         margin-top: 0;
        
     }
+
+    //mail icon
     .mailIcon{
         height: 3vw;
     }
 
+    //Subscibe banner description
     .subDesc{
         text-align: left;
         font-size: 1.1vw;
-        line-height: 1.1vw;
+        line-height: 1.5vw;
         font-weight: 400;
         white-space: normal;
     }
 
+    // Subscribe form div
     .subFormWrape{
 
         display: flex;
@@ -36,12 +44,13 @@
         padding-left: 2vw;
         padding-right: 2vw;
 
-
+        //Subscribe form
         #subForm{ 
             display: flex;
             align-items: center;
         }
 
+        //Subscribe form input area
         #subEmailInput{
             margin-left: 2vw;
             margin-right: 1vw;
@@ -65,6 +74,7 @@
             border: none;
         }
 
+        //Subscribe form submit btn
         #subBtn{
             width: fit-content;
             padding: 1vw;
@@ -101,7 +111,6 @@
 
 
 
-
 @media (max-width: 1040px) {
 
     .subDesc{
@@ -110,7 +119,7 @@
     }
 }
 
-$breakpoint-tablet: 768px;
+
 @media (max-width: $breakpoint-tablet) { 
 
     .subBannerWrape{

@@ -5,12 +5,13 @@ import '../sass/SubscriptionBanner.scss'
 export class SubscriptionBanner extends Component {
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {value: ''}; // state for form submission 
     
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
     
+      // form submission function handling
       handleChange(event) {
         this.setState({value: event.target.value});
       }

@@ -7,10 +7,10 @@ import SingleSlide from './SingleContentSlide'
 export class FavoriteBanner extends Component {
     render() {
         return (
+            //Use single slider for the banner content
             <div className="BannerSlider">
                 <SingleSlide clas='wrapeRight' img={favoriteImg} header="Our Favorite Tees"
-                            subTitle="Everyday tees you need." color="#FFFFFF"  
-                            />
+                            subTitle="Everyday tees you need." color="#FFFFFF" />
             </div>
 
         )

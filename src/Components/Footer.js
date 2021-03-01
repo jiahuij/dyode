@@ -8,21 +8,22 @@ export class Footer extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-          open1: true,
-          open2: true,
+        this.state = { //state to manage footer menu collap and expand
+          Menu1Expand: true,
+          Menu2Expand: true,
         }
       }
 
     render() {
-        var collapIcon1 = this.state.open1? "+": "-"
-        var collapIcon2 = this.state.open2? "+": "-"
+        //display different icon based on current state
+        var collapIcon1 = this.state.Menu1Expand? "+": "-"
+        var collapIcon2 = this.state.Menu2Expand? "+": "-"
         return (
             <div className="Footer">
                 <div className="services"> 
-                    <h2 onClick={function(){this.setState({open1:!this.state.open1})}.bind(this)} 
+                    <h2 onClick={function(){this.setState({Menu1Expand:!this.state.Menu1Expand})}.bind(this)} 
                                 className="footerTitle">Customer Service <span>{collapIcon1}</span></h2>
-                    <ul className={this.state.open1? "panel-collapse": "panel-collapse panel-close"}>
+                    <ul className={this.state.Menu1Expand? "panel-collapse": "panel-collapse panel-close"}>
                         <li className="footerMenuItem">
                             <a href="#!">Accessibility</a>
                         </li>
@@ -45,9 +46,9 @@ export class Footer extends Component {
                 </div>
 
                 <div className="company">
-                    <h2 onClick={function(){this.setState({open2:!this.state.open2})}.bind(this)} 
+                    <h2 onClick={function(){this.setState({Menu2Expand:!this.state.Menu2Expand})}.bind(this)} 
                         className="footerTitle">Company <span>{collapIcon2}</span></h2>
-                    <ul className={this.state.open2? "panel-collapse": "panel-collapse panel-close"}>
+                    <ul className={this.state.Menu2Expand? "panel-collapse": "panel-collapse panel-close"}>
                         <li className="footerMenuItem">
                             <a href="#!">About Us</a>
                         </li>

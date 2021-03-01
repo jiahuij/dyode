@@ -3,7 +3,6 @@ import '../sass/SingleContentSlide.scss'
 
 export class SingleContentSlide extends Component {
 
-//<div className="slider" style={{backgroundImage: `url(${this.props.img})`}}>
     render() {
         return (
             <div className='slider'>

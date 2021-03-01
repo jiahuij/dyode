@@ -1,22 +1,27 @@
- .dot{
-    width: 1vw !important;
-    height: 1vw !important;
-    box-shadow:none !important;
-}
-
-.carousel.carousel-slider{
-height: 80%;
-}
-
-.dot:focus{
-    outline: transparent;
-}
-
-
-
 $breakpoint-tablet: 768px;
+ 
+//top slider 
+.carousel.carousel-slider{
+
+    height: 80%;
+
+    //slider indicating dot
+    .dot{
+        width: 1.5vw !important;
+        height: 1.5vw !important;
+        box-shadow:none !important;
+    }
+
+    .dot:focus{
+        outline: transparent;
+    }
+
+}
+
   
 @media (max-width: $breakpoint-tablet) {
+
+// flex colum on mobile
 .carousel.carousel-slider{
     height: 40%;
     }
@@ -24,5 +29,6 @@ $breakpoint-tablet: 768px;
     .dot{
         width:10px !important;
         height:10px !important;
+        margin: 0 4px !important;
     }
 }

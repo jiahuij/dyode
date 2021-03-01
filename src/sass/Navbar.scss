@@ -1,11 +1,14 @@
 $bgColor: #10504F; 
 $textColor: #FFFFFF;
+$breakpoint-tablet: 768px;
+$breakpoint-phone: 480px;
 
-
+//return div
 .top{
     height: 10.2vw;
 }
 
+//Top Promo banner
 .topBanner{
     background-color: #000000;
     line-height: 3vw;
@@ -13,12 +16,12 @@ $textColor: #FFFFFF;
     top: 0%;
     width: 100%;
     height: 3vw;
-    z-index: 100;
+    z-index: 101;
     font-size: 12px;
 }
     
 
-
+// Desktop Nav
 .nav{
     top: 3vw;
     background-color: $bgColor;
@@ -29,22 +32,20 @@ $textColor: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
+    //logo a wrape
     .site-logo{
      position: absolute;
      left:48px;
      z-index: 100;
     }
 
+    //logo image
     .site-logo img{
         width: 4.8vw;
         height: 4vw;
        }
 
-
-
-
+    //nav menu 
     .navmenu {
         list-style: none; 
         display: inline-flex;
@@ -53,6 +54,7 @@ $textColor: #FFFFFF;
        
     }
 
+    //nav menu list item
     .navmenu li {
         padding: 10px 30px;
         font-weight: 500;
@@ -62,6 +64,23 @@ $textColor: #FFFFFF;
         
     }
 
+    //hover to show dropdown Component
+    .navmenu li:hover ~ .dropdownContent{
+        max-height: 400px;
+    }
+
+    //hover to show unerline
+    .navmenu li:hover{
+        text-underline-position: under;
+        text-decoration: underline;
+    }
+
+     //dropdown menu Component
+     .dropdownContent:hover{
+        max-height: 400px;
+    }
+
+    //search, user, checkout icon div
     .navIcon{
         display: flex;
         position: absolute;
@@ -69,24 +88,19 @@ $textColor: #FFFFFF;
         right:2.5vw;
     }
 
+    //search, user, checkout icon
     .icon{
         padding-left: 1vw;
         padding-right: 1vw;
     }
 
-    .dropdownContent:hover{
-        max-height: 400px;
+    //Search form
+    #searchForm{
+        overflow: hidden;
+        max-width: 100;
     }
 
-    .navmenu li:hover ~ .dropdownContent{
-        max-height: 400px;
-    }
-
-    .navmenu li:hover{
-        text-underline-position: under;
-        text-decoration: underline;
-    }
-
+   //search form input area
     #searchInput{
         width: 278px;
         height: 36px;
@@ -111,6 +125,7 @@ $textColor: #FFFFFF;
         font-weight: 400;
     }
 
+    //search form go btn
     #searchBtn{
         width: 56px;
         padding:0%;
@@ -120,8 +135,11 @@ $textColor: #FFFFFF;
         color: #FFFFFF;
     }
 
+    /////////////////////////////////////////////////mobile nav///////////////////////////////////////////////////
+    
+    //bottom section with image
     .menuPic{
-        background-color: #EFEFEF;
+        background-color: #FFFFFF;
         display: flex !important;
         height: 25vw;
         width: -webkit-fill-available;
@@ -132,16 +150,16 @@ $textColor: #FFFFFF;
         bottom: 3vw;
     }
 
+    //Menu Title
     .BurgerTitle{
         font-weight: 300;
         cursor: pointer;
     }
+
+    //Menu Expand and Collapse icon
     span{float:right;}
 
-    #searchForm{
-        overflow: hidden;
-        max-width: 100;
-    }
+    //Mobile saerch form div
     #mobileSearch{
         background-color: white;
         padding: 0;
@@ -152,16 +170,19 @@ $textColor: #FFFFFF;
         max-width: 0;
     }
 
+    //Mobile burger menu icon
     .bm-burger-button {
         width: 3vw;
         height: 3vw;
-        }
-
-    #searchFormMobile{
-        display: flex;
-    justify-content: end;
     }
 
+    //Mobile saerch form
+    #searchFormMobile{
+        display: flex;
+        justify-content: end;
+    }
+
+    //menu hr line breaker
     .menuLine{
         border-top: 0.5px solid #F1F1EF;
         border-bottom: 0px;
@@ -176,7 +197,7 @@ $textColor: #FFFFFF;
 
 
 
-$breakpoint-tablet: 768px;
+
 @media (max-width: 1100px) {
     .navmenu li{
         display:none !important;
@@ -190,22 +211,23 @@ $breakpoint-tablet: 768px;
     .nav .site-logo {
 
         left: 7.5vw;
-        height: 4vw;
+        height: 6vw;
     }
 
     .nav .site-logo img{
-        width: 4.8vw;
-        height: 4vw;
+        width: 8vw;
+        height: 6vw;
        }
+       
     #searchForm{
         overflow: hidden;
         max-width: 0;
     }
+
     #mobileSearch{
         max-width: 100em !important;
         padding: 0.5em !important;
     }
-
     
     .nav #searchInput {
         width: 50vw;
@@ -226,7 +248,6 @@ $breakpoint-tablet: 768px;
         line-height: 2vw !important;
     }
 
-
     .nav #searchBtn {
         width: 7vw;
         height: 5vw;
@@ -239,7 +260,6 @@ $breakpoint-tablet: 768px;
 }
 
 
-$breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
 
     .top{
@@ -256,9 +276,7 @@ $breakpoint-tablet: 768px;
         line-height: 4vw;
     }
         
-    .nav .icon {
-        height: 3vw;
-    }
+
 
     .BurgerTitle{
         font-size: 3vw;
@@ -268,13 +286,50 @@ $breakpoint-tablet: 768px;
 
 
 
-$breakpoint-phone: 480px;
-@media (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-phone) {
 
     .icon img{
+        height: 5vw;
+    }
+
+    .top {
+        height: 16vw;
+    }
+
+    .topBanner{
+      
+        line-height: 6vw;
+        height: 6vw;
+        z-index: 101;
+        font-size: 3vw;
+    }
+
+    .nav {
+        top: 6vw;
+    }
+
+    .nav .site-logo {
+        left: 15vw;
+        height: 8vw;
+    }
+
+    .nav .site-logo img {
+        width: 12vw;
+        height: 8vw;
+    }
+
+    .nav .bm-burger-button {
+        width: 3vw;
         height: 3vw;
     }
-    
+
+    .nav .bm-burger-button {
+        width: 5vw;
+        height: 5vw;
+        top: 2.5vw !important;
+        left: 5vw;
+    }
+        
 
 }
 

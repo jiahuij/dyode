@@ -1,31 +1,33 @@
+$breakpoint-phone: 480px;
+$breakpoint-tablet: 768px;
+
+//Product Category Container Div
 .categoryWrape{
     display: flex;
     justify-content: center;
 
 }
 
+//Left two category group
 .group{
     display: flex;
     justify-content: center;
 }
 
-
-$breakpoint-tablet: 768px;
   
 @media (max-width: $breakpoint-tablet) {
-.categoryWrape{
-    display: block;
+    .categoryWrape{
+        display: block;
+        }
+        //change the last category to full screen width on small screens
+    .long{
+        width: 88%;
+        margin: auto;
     }
-.long{
-    width: 88%;
-    margin: auto;
 }
-}
-
-
-$breakpoint-phone: 480px;
   
 @media (max-width: $breakpoint-phone) {
+    //change the last category to full screen width on small screens
     .long{
         width: 90%;
         margin: auto;

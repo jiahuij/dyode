@@ -4,6 +4,7 @@ import '../sass/Product.scss'
 export class Product extends Component {
     render() {
         return (
+            //Single Product Content
             <a href="#!">
                 <div className='productWrape'>
                     <img className='productImg' src={this.props.productImg} alt='product'></img>

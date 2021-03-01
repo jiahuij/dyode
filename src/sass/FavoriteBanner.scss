@@ -1,23 +1,17 @@
+$breakpoint-phone: 480px;
+$breakpoint-tablet: 768px;
+
 .BannerSlider{
     margin-top: 7vw;
 }
-
-$breakpoint-tablet: 768px;
   
 @media (max-width: $breakpoint-tablet) {
+  //change banner to flex-colume on smaller screen
  .BannerSlider .slider{
      flex-direction: column;
-     background-color: #EFEFEF;
+     background-color: #FFFFFF;
 
  }
 }
 
 
-$breakpoint-phone: 480px;
-  
-@media (max-width: $breakpoint-phone) {
-    .long{
-        width: 90%;
-        margin: auto;
-    }
-}

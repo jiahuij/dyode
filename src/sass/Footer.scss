@@ -1,3 +1,7 @@
+$breakpoint-phone: 480px;
+$breakpoint-tablet: 768px;
+
+//footer
 .Footer{
     padding: 5vw;
     height: fit-content;
@@ -10,16 +14,17 @@
         padding-inline-start: 0px;
     }
 
+    //Footer menu title
     .footerTitle{
         font-family: Pacifico;
-        font-size: 2vw;
+        font-size: 1.5vw;
         line-height: 39px;
         font-weight: 400;
         cursor: pointer;
         white-space: nowrap;
     }
 
-
+    //Footer menu list item
     .footerMenuItem{
         list-style: none;
         font-size: 1vw;
@@ -27,10 +32,17 @@
         font-weight: 400;
     }
 
+    //social icons
+    .footerMenuItem img{
+        height: 2vw;
+    }
+
+    //customer service menu
     .services{
         margin-right: 5vw;
     }
 
+    //social icon menu
     .social{
         margin-left: auto;
     }
@@ -39,11 +51,13 @@
         display:inline;
     }
 
+    //social icon paddings
     #insIcon{
-        margin-left: 2em;
-        margin-right: 2em;
+        margin-left: 4em;
+        margin-right: 4em;
     }
 
+    //styles for hiding and showing menu items
     .panel-collapse {
         max-height: 500px;
         overflow: hidden;
@@ -60,7 +74,6 @@
 
 
 
-$breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
     .Footer{
         flex-direction: column;
@@ -91,16 +104,14 @@ $breakpoint-tablet: 768px;
         list-style: none;
         font-size: 2vw !important;
         line-height: 5vw !important;
- 
+    }
+    .footerMenuItem img{
+        height: 3vw !important;
     }
 }
 
 
 
-
-
-
-$breakpoint-phone: 480px;
 @media (max-width: $breakpoint-phone) {
 
     .Footer .footerTitle {
@@ -112,7 +123,6 @@ $breakpoint-phone: 480px;
  
     }
     
- 
 
 }
 
