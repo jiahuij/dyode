@@ -7,8 +7,8 @@ $breakpoint-tablet: 768px;
 
     //slider indicating dot
     .dot{
-        width: 1.5vw !important;
-        height: 1.5vw !important;
+        width: 1vw !important;
+        height: 1vw !important;
         box-shadow:none !important;
     }
 
@@ -27,8 +27,8 @@ $breakpoint-tablet: 768px;
     }
 
     .dot{
-        width:10px !important;
-        height:10px !important;
+        width: 1.5vw !important;
+        height: 1.5vw !important;
         margin: 0 4px !important;
     }
 }

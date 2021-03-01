@@ -33,7 +33,7 @@ export default () => {
 
 
 
-  const chevronWidth = 40;
+  const chevronWidth = 3;
   
   //product list
   var products = [
@@ -49,7 +49,7 @@ export default () => {
   var numAProductDisplay = Math.round(window.innerWidth/500);
 
   return (
-    <div >
+    <div style={{ padding: `0 ${chevronWidth}vw` }}>
         <h1 className='cursiveHeader'>Shop New Arrivals</h1>
       <ItemsCarousel
         requestToChangeActive={setActiveItemIndex}
