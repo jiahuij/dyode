@@ -143,6 +143,10 @@ $breakpoint-phone: 480px;
 
 
 @media (max-width: $breakpoint-phone) {
+
+    .carousel .slider {
+        height: 100%;
+    }
     .header {
       font-size: 6vw;
     }
